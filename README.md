@@ -58,6 +58,7 @@ bash
 curl https://your-api-gateway-url/prod/items
 
 📖 API Reference
+
 The API provides the following endpoints:
 Method
 Endpoint
@@ -85,12 +86,14 @@ Delete an item by its ID
 
 
 🌐 Frontend
+
 The project includes a simple frontend to interact with the API.
 After deployment, find the URL of your S3 bucket in the SAM outputs or the AWS Console.
 Open the URL in your web browser.
 You can now use the web interface to create, view, update, and delete items. The frontend will make calls directly to your deployed API Gateway.
 
 📊 Monitoring
+
 All application activity is logged to Amazon CloudWatch.
 To view Lambda logs:
 Navigate to the AWS Lambda console.
@@ -102,12 +105,14 @@ Select your API and stages to view access logs and execution metrics.
 
 
 🧹 Clean Up
+
 To avoid ongoing costs, you can delete the entire application stack and all its resources using the AWS SAM CLI.
 bash
 sam delete
 You will be prompted to confirm the stack name and region. This will delete the API Gateway, Lambda functions, DynamoDB table, S3 bucket, and all related resources.
 
 🎯 Learning Outcomes
+
 This project demonstrates core AWS serverless competencies:
 Designing and implementing a scalable, event-driven serverless architecture.
 Integrating API Gateway with Lambda for stateless HTTP request handling.
