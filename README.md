@@ -64,10 +64,12 @@ Method
 Endpoint
 Description
 Request Body
+
 POST
 /items
 Create a new item
 {"name": "string", "description": "string"}
+
 GET
 /items
 Retrieve all items
@@ -80,6 +82,7 @@ PUT
 /items/{id}
 Update an existing item
 {"name": "string", "description": "string"}
+
 DELETE
 /items/{id}
 Delete an item by its ID
@@ -88,37 +91,44 @@ Delete an item by its ID
 🌐 Frontend
 
 The project includes a simple frontend to interact with the API.
+
 After deployment, find the URL of your S3 bucket in the SAM outputs or the AWS Console.
 Open the URL in your web browser.
+
 You can now use the web interface to create, view, update, and delete items. The frontend will make calls directly to your deployed API Gateway.
 
 📊 Monitoring
 
 All application activity is logged to Amazon CloudWatch.
+
 To view Lambda logs:
+
 Navigate to the AWS Lambda console.
+
 Select your function (e.g., ItemsFunction).
+
 Click on the "Monitor" tab and then "View logs in CloudWatch".
+
 To view API Gateway logs:
+
 Navigate to the API Gateway console.
+
 Select your API and stages to view access logs and execution metrics.
-
-
-🧹 Clean Up
-
-To avoid ongoing costs, you can delete the entire application stack and all its resources using the AWS SAM CLI.
-bash
-sam delete
-You will be prompted to confirm the stack name and region. This will delete the API Gateway, Lambda functions, DynamoDB table, S3 bucket, and all related resources.
 
 🎯 Learning Outcomes
 
 This project demonstrates core AWS serverless competencies:
+
 Designing and implementing a scalable, event-driven serverless architecture.
+
 Integrating API Gateway with Lambda for stateless HTTP request handling.
+
 Using DynamoDB as a primary database, including table design and SDK interaction.
+
 Implementing security best practices using IAM roles and least-privilege policies.
+
 Monitoring and debugging serverless applications using CloudWatch.
+
 Deploying infrastructure using Infrastructure as Code (IaC) with AWS SAM.
 
 NOTE: This is a demonstration project. For production use, consider adding authentication/authorization (e.g., with Amazon Cognito), input validation, and more robust error handling. It doesn't include any code as it's customizable. The project is created as an MVP to demonstrate an educational understanding of AWS's Serverless REST API Architecture, mainly through the diagram and documentation of the steps required to create a production-ready application.
