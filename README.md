@@ -121,7 +121,7 @@ Implementing security best practices using IAM roles and least-privilege policie
 Monitoring and debugging serverless applications using CloudWatch.
 Deploying infrastructure using Infrastructure as Code (IaC) with AWS SAM.
 
-Note: This is a demonstration project. For production use, consider adding authentication/authorization (e.g., with Amazon Cognito), input validation, and more robust error handling. It doesn't include any code as it's customizable. The project is created as an MVP to demonstrate an educational understanding of AWS's Serverless REST API Architecture, mainly through the diagram and documentation of the steps required to create a production-ready application.
+NOTE: This is a demonstration project. For production use, consider adding authentication/authorization (e.g., with Amazon Cognito), input validation, and more robust error handling. It doesn't include any code as it's customizable. The project is created as an MVP to demonstrate an educational understanding of AWS's Serverless REST API Architecture, mainly through the diagram and documentation of the steps required to create a production-ready application.
 
 
 
