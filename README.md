@@ -12,7 +12,7 @@ Security: AWS IAM roles enforce permissions for the least privilege.
 
 Observability: Amazon CloudWatch provides logging and monitoring.
 
-✨ Features
+✨ FEATURES
 
 Full CRUD Operations: Create, read, update, and delete items via a RESTful interface.
 
@@ -28,7 +28,7 @@ Infrastructure as Code (IaC): The entire stack is defined and deployed using the
 
 Serverless Application Model (SAM).
 
-🚀 Deployment
+🚀 DEPLOYMENT
 
 1. Clone the Repository
 bash
@@ -57,7 +57,7 @@ Example: Get all items
 bash
 curl https://your-api-gateway-url/prod/items
 
-📖 API Reference
+📖 API REFERENCE
 
 The API provides the following endpoints:
 Method
@@ -88,7 +88,7 @@ DELETE
 Delete an item by its ID
 
 
-🌐 Frontend
+🌐 FRONTEND
 
 The project includes a simple frontend to interact with the API.
 
@@ -97,7 +97,7 @@ Open the URL in your web browser.
 
 You can now use the web interface to create, view, update, and delete items. The frontend will make calls directly to your deployed API Gateway.
 
-📊 Monitoring
+📊 MONITORING
 
 All application activity is logged to Amazon CloudWatch.
 
@@ -115,7 +115,7 @@ Navigate to the API Gateway console.
 
 Select your API and stages to view access logs and execution metrics.
 
-🎯 Learning Outcomes
+🎯 LEARNING OUTCOMES
 
 This project demonstrates core AWS serverless competencies:
 
