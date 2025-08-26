@@ -139,7 +139,7 @@ It requires a thorough configuration, deployment, and setup of each service on A
 
 ⚠️ DISCLAIMER
 
-This project is licensed under the MIT License. This license applies **only to the source code and documentation** in this repository.
+This project is licensed under the MIT License. This license applies **only to the source code, diagram, and documentation** in this repository.
 
 This project relies on **Amazon Web Services (AWS)**. Please be aware that:
 
