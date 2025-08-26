@@ -1,52 +1,52 @@
 KEY COMPONENTS:
 
-Frontend: A static Single-Page Application (SPA) hosted on Amazon S3.
+* Frontend: A static Single-Page Application (SPA) hosted on Amazon S3.
 
-API Layer: Amazon API Gateway provides a secure, scalable REST API endpoint.
+* API Layer: Amazon API Gateway provides a secure, scalable REST API endpoint.
 
-Business Logic: AWS Lambda functions execute the CRUD operations in a stateless, event-driven manner.
+* Business Logic: AWS Lambda functions execute the CRUD operations in a stateless, event-driven manner.
 
-Data Store: Amazon DynamoDB, a managed NoSQL database, stores the application data.
+* Data Store: Amazon DynamoDB, a managed NoSQL database, stores the application data.
 
-Security: AWS IAM roles enforce permissions for the least privilege.
+* Security: AWS IAM roles enforce permissions for the least privilege.
 
-Observability: Amazon CloudWatch provides logging and monitoring.
+* Observability: Amazon CloudWatch provides logging and monitoring.
 
 ✨ FEATURES
 
-Full CRUD Operations: Create, read, update, and delete items via a RESTful interface.
+* Full CRUD Operations: Create, read, update, and delete items via a RESTful interface.
 
-Serverless: No servers to provision or manage. Scales automatically with usage.
+* Serverless: No servers to provision or manage. Scales automatically with usage.
 
-Cost-Effective: You only pay for the API requests and data storage you use.
+* Cost-Effective: You only pay for the API requests and data storage you use.
 
-Secure: Fine-grained IAM permissions and API Gateway security features.
+* Secure: Fine-grained IAM permissions and API Gateway security features.
 
-High Availability: Built on AWS's highly available and durable services.
+* High Availability: Built on AWS's highly available and durable services.
 
-Infrastructure as Code (IaC): The entire stack is defined and deployed using the AWS 
+* Infrastructure as Code (IaC): The entire stack is defined and deployed using the AWS 
 
-Serverless Application Model (SAM).
+* Serverless Application Model (SAM).
 
 🚀 DEPLOYMENT
 
-1. Clone the Repository
+* 1. Clone the Repository
 bash
 git clone <your-repo-url>
 cd serverless-rest-api
 
-3. Build the Application
+* 3. Build the Application
 Use the SAM CLI to build the application. This step processes your template, installs dependencies, and prepares everything for deployment.
 bash
 sam build
 
-4. Deploy to AWS
+* 4. Deploy to AWS
 This command packages and deploys your application to AWS. You will be prompted for a "stack name" (e.g., my-serverless-api) and an AWS Region (e.g., us-east-1).
 bash
 sam deploy --guided
 Follow the on-screen prompts. SAM will output the URLs for your API Gateway and your S3 bucket frontend.
 
-6. Test the API
+* 6. Test the API
 Once deployed, you can test the API using curl, Postman, or the provided frontend.
 Example: Create a new item
 bash
@@ -60,10 +60,10 @@ curl https://your-api-gateway-url/prod/items
 📖 API REFERENCE
 
 The API provides the following endpoints:
-Method
-Endpoint
-Description
-Request Body
+* Method
+* Endpoint
+* Description
+* Request Body
 
 POST
 /items
@@ -90,12 +90,12 @@ Delete an item by its ID
 
 🌐 FRONTEND
 
-The project includes a simple frontend to interact with the API.
+* The project includes a simple frontend to interact with the API.
 
-After deployment, find the URL of your S3 bucket in the SAM outputs or the AWS Console.
+* After deployment, find the URL of your S3 bucket in the SAM outputs or the AWS Console.
 Open the URL in your web browser.
 
-You can now use the web interface to create, view, update, and delete items. The frontend will make calls directly to your deployed API Gateway.
+* You can now use the web interface to create, view, update, and delete items. The frontend will make calls directly to your deployed API Gateway.
 
 📊 MONITORING
 
@@ -103,17 +103,17 @@ All application activity is logged to Amazon CloudWatch.
 
 To view Lambda logs:
 
-Navigate to the AWS Lambda console.
+* Navigate to the AWS Lambda console.
 
-Select your function (e.g., ItemsFunction).
+* Select your function (e.g., ItemsFunction).
 
-Click on the "Monitor" tab and then "View logs in CloudWatch".
+* Click on the "Monitor" tab and then "View logs in CloudWatch".
 
 To view API Gateway logs:
 
-Navigate to the API Gateway console.
+* Navigate to the API Gateway console.
 
-Select your API and stages to view access logs and execution metrics.
+* Select your API and stages to view access logs and execution metrics.
 
 🎯 LEARNING OUTCOMES
 
