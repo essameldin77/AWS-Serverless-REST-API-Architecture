@@ -119,17 +119,17 @@ Select your API and stages to view access logs and execution metrics.
 
 This project demonstrates core AWS serverless competencies:
 
-Designing and implementing a scalable, event-driven serverless architecture.
+* Designing and implementing a scalable, event-driven serverless architecture.
 
-Integrating API Gateway with Lambda for stateless HTTP request handling.
+* Integrating API Gateway with Lambda for stateless HTTP request handling.
 
-Using DynamoDB as a primary database, including table design and SDK interaction.
+* Using DynamoDB as a primary database, including table design and SDK interaction.
 
-Implementing security best practices using IAM roles and least-privilege policies.
+* Implementing security best practices using IAM roles and least-privilege policies.
 
-Monitoring and debugging serverless applications using CloudWatch.
+* Monitoring and debugging serverless applications using CloudWatch.
 
-Deploying infrastructure using Infrastructure as Code (IaC) with AWS SAM.
+* Deploying infrastructure using Infrastructure as Code (IaC) with AWS SAM.
 
 NOTE: This is a demonstration project. For production use, consider adding authentication/authorization (e.g., with Amazon Cognito), input validation, and more robust error handling. 
 
