@@ -38,28 +38,34 @@ KEY COMPONENTS:
 🚀 DEPLOYMENT
 
 * 1. Clone the Repository
+ 
 bash
 git clone <your-repo-url>
-cd serverless-rest-api
+
 
 * 3. Build the Application
 Use the SAM CLI to build the application. This step processes your template, installs dependencies, and prepares everything for deployment.
+
 bash
 sam build
 
 * 4. Deploy to AWS
 This command packages and deploys your application to AWS. You will be prompted for a "stack name" (e.g., my-serverless-api) and an AWS Region (e.g., us-east-1).
+
 bash
 sam deploy --guided
+
 Follow the on-screen prompts. SAM will output the URLs for your API Gateway and your S3 bucket frontend.
 
 * 6. Test the API
 Once deployed, you can test the API using curl, Postman, or the provided frontend.
+
 Example: Create a new item
 bash
 curl -X POST https://your-api-gateway-url/prod/items \
   -H "Content-Type: application/json" \
   -d '{"name": "Learn Serverless", "description": "Build an API with AWS"}'
+  
 Example: Get all items
 bash
 curl https://your-api-gateway-url/prod/items
