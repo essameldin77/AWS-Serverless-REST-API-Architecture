@@ -150,3 +150,5 @@ NOTE: This is a demonstration project. For production use, consider adding authe
 The project is created as an MVP to demonstrate an educational understanding of AWS's Serverless REST API Architecture, mainly through the diagram and documentation of the steps required to create a production-ready application.
 
 It requires a thorough configuration, deployment, and setup of each service on AWS through an existing account.
+
+DISCLAIMER: This documentation provides instructions for deploying resources on Amazon Web Services (AWS). AWS is a Pay-As-You-Go provider, and deploying this solution may result in charges to your AWS account for the usage of AWS services. You are responsible for monitoring your AWS usage, understanding the associated costs, and cleaning up resources to prevent unexpected charges. 
