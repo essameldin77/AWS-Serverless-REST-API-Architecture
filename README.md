@@ -101,7 +101,7 @@ Delete an item by its ID
   
 * It can be used as a static website or integrated with AWS.
 
-* To integrate it with AWS, the endpoints need to be created in conjunction with the AWS-related services as architected in the diagram.
+* To integrate it with AWS, the endpoints need to be created in conjunction with the AWS-related services as architected in the diagram. The JavaScript code (app.js) has to be modified further for endpoint integration with AWS-relevant services.
 
 * Always ensure the CRUD operations and endpoints are written and configured correctly to integrate seamlessly.
 
@@ -109,6 +109,7 @@ Delete an item by its ID
 Open the URL in your web browser.
 
 * You can now use the web interface to create, view, update, and delete items. The frontend will make calls directly to your deployed API Gateway.
+
 
 📊 MONITORING
 
