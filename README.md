@@ -4,6 +4,7 @@ https://github.com/essameldin77/AWS-Serverless-REST-API-Architecture/blob/main/1
 Architectural Pattern Overview:
 https://github.com/essameldin77/AWS-Serverless-REST-API-Architecture/blob/main/2.png?raw=true
 
+
 KEY COMPONENTS:
 
 * Frontend: A static Single-Page Application (SPA) hosted on Amazon S3.
