@@ -149,13 +149,3 @@ NOTE: This is a demonstration project. For production use, consider adding authe
 The project is created as an MVP to demonstrate an educational understanding of AWS's Serverless REST API Architecture, mainly through the diagram and documentation of the steps required to create a production-ready application.
 
 It requires a thorough configuration, deployment, and setup of each service on AWS through an existing account.
-
-⚠️ DISCLAIMER
-
-This project is licensed under the MIT License. This license applies **only to the source code, diagram, and documentation** in this repository.
-
-This project relies on **Amazon Web Services (AWS)**. Please be aware that:
-
-*   AWS services are **not** licensed under the MIT License and are subject to their own respective terms and pricing.
-*   Deploying this architecture will **incur costs** on your AWS account.
-*   You are responsible for managing and securing your own AWS resources and data
