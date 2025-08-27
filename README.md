@@ -96,7 +96,7 @@ Delete an item by its ID
 
 * To integrate it with AWS, the endpoints need to be created in conjunction with the AWS-related services as architected in the diagram.
 
-* Always ensure the CRUD operations and endpoints are written to integrate seamlessly.
+* Always ensure the CRUD operations and endpoints are written and configured correctly to integrate seamlessly.
 
 * After deployment, find the URL of your S3 bucket in the SAM outputs or the AWS Console.
 Open the URL in your web browser.
