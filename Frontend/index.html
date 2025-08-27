@@ -3,109 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Platform Demo - Educational Project</title>
+    <title>AWS Todo List</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <div class="logo-text">Cloud Platform Demo</div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
-                        <li><a href="#"><i class="fas fa-concierge-bell"></i> Services</a></li>
-                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h1>Static Page Test...</h1>
-            <div class="disclaimer">
-                <p><strong>Educational Demo:</strong> This is a demonstration Single Page Application for educational purposes only. This is not affiliated with, endorsed by, or connected to any cloud provider.</p>
-            </div>
-            <p>This demonstration showcases a responsive layout with key components for a modern web application, using a generic cloud platform theme.</p>
-            <a href="#" class="cta-button">Get Started <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>High Performance</h3>
-                    <p>Optimized for fast loading and smooth user experience with minimal latency.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Secure & Reliable</h3>
-                    <p>Built with security best practices and reliable infrastructure in mind.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-expand"></i>
-                    </div>
-                    <h3>Fully Scalable</h3>
-                    <p>Easily scale your application to handle increased traffic and demand.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="container">
-            <h2 class="section-title">Cloud Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <h3>Cloud Storage</h3>
-                    <p>Scalable storage in the cloud for data storage and retrieval.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Serverless Functions</h3>
-                    <p>Run code without provisioning or managing servers.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Content Delivery</h3>
-                    <p>Content delivery network for fast, secure content delivery.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Development Platform</h3>
-                    <p>Develop and deploy fullstack web and mobile applications.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <div class="container">
-        <div class="educational-note">
-            <h3><i class="fas fa-graduation-cap"></i> Educational Purpose</h3>
-            <p>This project is created for educational demonstration only. It showcases modern web development techniques including responsive design, CSS animations, and JavaScript interactions.</p>
-            <p>All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</p>
+        <header>
+            <div class="logo">
+                <i class="fab fa-aws logo-icon"></i>
+                <div class="logo-text">AWS Todo List</div>
+            </div>
+            <p class="subtitle">A serverless CRUD application with AWS Lambda integration</p>
+        </header>
+        
+        <div class="disclaimer">
+            <p><strong>Educational Demo:</strong> This is a demonstration Single Page Application for educational purposes only. It simulates interaction with AWS API Gateway and Lambda functions.</p>
+        </div>
+        
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="Enter a new task...">
+            <button id="add-btn"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        
+        <div class="todo-list" id="todo-list">
+            <!-- Todo items will be added here dynamically -->
+        </div>
+        
+        <div class="api-section">
+            <h3><i class="fas fa-cloud"></i> AWS API Integration</h3>
+            <p>Simulate interaction with AWS API Gateway and Lambda functions:</p>
+            
+            <div class="api-controls">
+                <button id="save-btn"><i class="fas fa-save"></i> Save to Cloud</button>
+                <button id="load-btn"><i class="fas fa-download"></i> Load from Cloud</button>
+                <button id="sync-btn"><i class="fas fa-sync"></i> Sync Now</button>
+            </div>
+            
+            <div class="status" id="api-status">
+                Status: Ready to connect to AWS API
+            </div>
         </div>
     </div>
-
-    <footer>
-        <div class="container">
-            <p>Cloud Platform Demo &copy; 2023. This is for demonstration and educational purposes only.</p>
-        </div>
-    </footer>
 
     <script src="app.js"></script>
 </body>
