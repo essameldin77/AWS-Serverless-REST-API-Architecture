@@ -90,7 +90,13 @@ Delete an item by its ID
 
 🌐 FRONTEND
 
-* The project includes a simple frontend to interact with the API.
+* The project includes a simple frontend to-do list application to interact with the API.
+  
+* It can be used as a static website or integrated with AWS.
+
+* To integrate it with AWS, the endpoints need to be created in conjunction with the AWS-related services as architected in the diagram.
+
+* Always ensure the CRUD operations and endpoints are written to integrate seamlessly.
 
 * After deployment, find the URL of your S3 bucket in the SAM outputs or the AWS Console.
 Open the URL in your web browser.
