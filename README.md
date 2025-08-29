@@ -7,7 +7,7 @@ https://github.com/essameldin77/AWS-Serverless-REST-API-Architecture/blob/main/2
 
 KEY COMPONENTS:
 
-* Frontend: A static Single-Page Application (SPA) hosted on Amazon S3.
+* Frontend: A Single-Page Application (SPA) hosted on Amazon S3.
 
 * API Layer: Amazon API Gateway provides a secure, scalable REST API endpoint.
 
