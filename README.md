@@ -104,8 +104,6 @@ Delete an item by its ID
 🌐 FRONTEND
 
 * The project includes a simple frontend to-do list application to interact with the API.
-  
-* It can be used as a static website or integrated with AWS.
 
 * To integrate it with AWS, the endpoints need to be created in conjunction with the AWS-related services as architected in the diagram. The JavaScript code (app.js) has to be modified further for endpoint integration with AWS-relevant services.
 
